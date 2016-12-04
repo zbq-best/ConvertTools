@@ -3,7 +3,7 @@ package com.ikyxxs.model;
 import lombok.Data;
 
 @Data
-public class EncodeModel {
+public class CodecModel {
 
     private String inStr;
     private String outStr;

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>编码加密工具箱</title>
+
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+</head>
+<body>
+<div class="page-header" align="center">
+    <h3>MD5</h3>
+</div>
+<div style="width: 61%;margin:3% auto">
+    <form method="post">
+        #springBind("crypto.inStr")
+        <div>
+        <textarea class="form-control" name="${status.expression}" rows=5 cols=80
+                  placeholder="输入需要MD5加密的字符串">$!status.value</textarea>
+        </div>
+        <button type="submit" class="btn btn-default" style="margin: 3% 50%">提交</button>
+        <div>
+            #springBind("crypto.outStr")
+            <textarea class="form-control" name="${status.expression}" rows=5 cols=80
+                      placeholder="此处会有MD5加密后的字符串">$!status.value</textarea>
+        </div>
+    </form>
+</div>
+
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</body>
+</html>
